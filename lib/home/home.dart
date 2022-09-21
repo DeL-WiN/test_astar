@@ -44,7 +44,7 @@ class Home extends StatelessWidget {
           ),
           floatingActionButton: FloatingActionButton.extended(
               onPressed: () {
-                ApiWelcome().neighbors;
+                ApiWelcome().graph();
               },
               label: const Text('Start counting process')),
         );
@@ -56,7 +56,6 @@ class Home extends StatelessWidget {
               const Text(''),
               FloatingActionButton.extended(
                   onPressed: () {
-                    ApiWelcome().way();
                   },
                   label: const Text('Start counting process')),
             ],
@@ -73,7 +72,6 @@ class Home extends StatelessWidget {
               const Text('Error'),
               FloatingActionButton.extended(
                   onPressed: () {
-                    ApiWelcome().way();
                   },
                   label: const Text('Start counting process')),
             ],
